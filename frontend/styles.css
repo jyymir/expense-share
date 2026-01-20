@@ -1,1 +1,134 @@
 /* styles.css */
+
+:root { --crimson-carrot: #ff4800ff; --blaze-orange: #ff5400ff; --blaze-orange-2: #ff6000ff; --pumpkin-spice: #ff6d00ff; --harvest-orange: #ff7900ff; --princeton-orange: #ff8500ff; --deep-saffron: #ff9100ff; --amber-glow: #ff9e00ff; --orange: #ffaa00ff; --amber-flame: #ffb600ff; }
+
+/* alternative color palette */
+/* :root { --ink-black: #03071eff; --night-bordeaux: #370617ff; --black-cherry: #6a040fff; --oxblood: #9d0208ff; --brick-ember: #d00000ff; --red-ochre: #dc2f02ff; --cayenne-red: #e85d04ff; --deep-saffron: #f48c06ff; --orange: #faa307ff; --amber-flame: #ffba08ff; } */
+
+body {
+    font-family: 'Geist', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+}
+
+li, a, button {
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+  background-color: #FF4800;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 6%;
+}
+
+.nav-links li{
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a{
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.nav-links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+  transition: all 0.3s ease 0s;
+  color: black;
+}
+
+.nav-buttons button{
+  padding: 9px 25px;
+  background-color: white;
+  color: black;
+  border: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.intro {
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient( to bottom, var(--crimson-carrot), /* darkest at top */ var(--blaze-orange), var(--blaze-orange-2), var(--pumpkin-spice), var(--harvest-orange), var(--princeton-orange), var(--deep-saffron), var(--amber-glow), var(--orange), var(--amber-flame) /* lightest at bottom */ );
+    /* background: linear-gradient( to bottom, var(--ink-black), darkest var(--night-bordeaux), var(--black-cherry), var(--oxblood), var(--brick-ember), var(--red-ochre), var(--cayenne-red), var(--deep-saffron), var(--orange), var(--amber-flame) lightest ); */
+  }
+
+  .intro h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    margin: 20px 0;
+  }
+
+  .intro p{
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+
+  .intro button{
+    padding: 9px 25px;
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 20px;
+  }
+
+  .intro button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.features-overview {
+    font-family: 'Geist', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    align-items: center;
+    background-color: black;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: white;
+    gap:20px;
+    padding: 20px
+}
+
+.features-list{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 150px;
+}
+
+.features-desc{
+  
+    text-align: center;
+}
