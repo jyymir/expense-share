@@ -1,5 +1,6 @@
 /* styles.css */
 
+/* :root { --deep-twilight: #03045eff; --french-blue: #023e8aff; --bright-teal-blue: #0077b6ff; --blue-green: #0096c7ff; --turquoise-surf: #00b4d8ff; --sky-aqua: #48cae4ff; --frosted-blue: #90e0efff; --frosted-blue-2: #ade8f4ff; --light-cyan: #caf0f8ff; } */
 :root { --crimson-carrot: #ff4800ff; --blaze-orange: #ff5400ff; --blaze-orange-2: #ff6000ff; --pumpkin-spice: #ff6d00ff; --harvest-orange: #ff7900ff; --princeton-orange: #ff8500ff; --deep-saffron: #ff9100ff; --amber-glow: #ff9e00ff; --orange: #ffaa00ff; --amber-flame: #ffb600ff; }
 
 /* alternative color palette */
@@ -16,17 +17,18 @@ body {
 li, a, button {
     font-weight: 400;
     font-size: 16px;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 header {
-  background-color: #FF4800;
+  background-color: white;
   margin-top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 6%;
+  border-bottom: solid 2px lightgrey;
 }
 
 .nav-links li{
@@ -52,8 +54,8 @@ header {
 
 .nav-buttons button{
   padding: 9px 25px;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   border: none;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   border-radius: 50px;
@@ -62,17 +64,24 @@ header {
 }
 
 button:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
 
+#blue-gradient {
+  background: linear-gradient(90deg, #ff5400ff, #ffb600ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .intro {
-    color: white;
+    color: black;
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient( to bottom, var(--crimson-carrot), /* darkest at top */ var(--blaze-orange), var(--blaze-orange-2), var(--pumpkin-spice), var(--harvest-orange), var(--princeton-orange), var(--deep-saffron), var(--amber-glow), var(--orange), var(--amber-flame) /* lightest at bottom */ );
+    background-color: white;
+    /* background: linear-gradient( to bottom, var(--deep-twilight), var(--french-blue), var(--bright-teal-blue), var(--blue-green), var(--turquoise-surf), var(--sky-aqua), var(--frosted-blue), var(--frosted-blue-2), var(--light-cyan) ); */
+    /* background: linear-gradient( to bottom, var(--crimson-carrot), darkest at top var(--blaze-orange), var(--blaze-orange-2), var(--pumpkin-spice), var(--harvest-orange), var(--princeton-orange), var(--deep-saffron), var(--amber-glow), var(--orange), var(--amber-flame) lightest at bottom ); */
     /* background: linear-gradient( to bottom, var(--ink-black), darkest var(--night-bordeaux), var(--black-cherry), var(--oxblood), var(--brick-ember), var(--red-ochre), var(--cayenne-red), var(--deep-saffron), var(--orange), var(--amber-flame) lightest ); */
   }
 
@@ -85,13 +94,14 @@ button:hover {
   .intro p{
     font-size: 18px;
     margin: 10px 0;
+    font-style: italic;
   }
 
 
   .intro button{
     padding: 9px 25px;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border: none;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     border-radius: 50px;
@@ -101,8 +111,8 @@ button:hover {
   }
 
   .intro button:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
@@ -114,10 +124,9 @@ button:hover {
     padding: 20px;
     background-color: white;
     align-items: center;
-    background-color: black;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    color: white;
+    color: black;
     gap:20px;
     padding: 20px
 }
@@ -129,6 +138,6 @@ button:hover {
 }
 
 .features-desc{
-  
+    
     text-align: center;
 }
