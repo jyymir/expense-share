@@ -1,5 +1,7 @@
 /* styles.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* :root { --deep-twilight: #03045eff; --french-blue: #023e8aff; --bright-teal-blue: #0077b6ff; --blue-green: #0096c7ff; --turquoise-surf: #00b4d8ff; --sky-aqua: #48cae4ff; --frosted-blue: #90e0efff; --frosted-blue-2: #ade8f4ff; --light-cyan: #caf0f8ff; } */
 :root { --crimson-carrot: #ff4800ff; --blaze-orange: #ff5400ff; --blaze-orange-2: #ff6000ff; --pumpkin-spice: #ff6d00ff; --harvest-orange: #ff7900ff; --princeton-orange: #ff8500ff; --deep-saffron: #ff9100ff; --amber-glow: #ff9e00ff; --orange: #ffaa00ff; --amber-flame: #ffb600ff; }
 
@@ -7,7 +9,7 @@
 /* :root { --ink-black: #03071eff; --night-bordeaux: #370617ff; --black-cherry: #6a040fff; --oxblood: #9d0208ff; --brick-ember: #d00000ff; --red-ochre: #dc2f02ff; --cayenne-red: #e85d04ff; --deep-saffron: #f48c06ff; --orange: #faa307ff; --amber-flame: #ffba08ff; } */
 
 body {
-    font-family: 'Geist', sans-serif;
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -38,9 +40,9 @@ header {
 }
 
 .nav-links li a{
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
-  font-family: 'Bebas Neue', cursive;
+  /* font-family: '"Montserrat", sans-serif'; */
 }
 
 .nav-links li a{
@@ -54,8 +56,8 @@ header {
 
 .nav-buttons button{
   padding: 9px 25px;
-  background-color: black;
-  color: white;
+  /* background-color: black;
+  color: white; */
   border: none;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   border-radius: 50px;
@@ -63,13 +65,27 @@ header {
   transition: all 0.3s ease 0s;
 }
 
-button:hover {
+#signup-btn {
   background-color: white;
-  color: black;
+  border: solid 2px rgb(234, 99, 32);
+  color: rgb(234, 99, 32);
+}
+
+#login-btn {
+  background-color: rgb(234, 99, 32);
+  color: white;
+}
+
+#login-btn:hover, #signup-btn:hover {
+  background-color: black;
+  color: white;
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
 
+#signup-btn:hover {
+  border: solid 2px black;
+}
 #blue-gradient {
   background: linear-gradient(90deg, #ff5400ff, #ffb600ff);
   -webkit-background-clip: text;
@@ -80,15 +96,17 @@ button:hover {
     text-align: center;
     padding: 100px 20px;
     background-color: white;
+    
     /* background: linear-gradient( to bottom, var(--deep-twilight), var(--french-blue), var(--bright-teal-blue), var(--blue-green), var(--turquoise-surf), var(--sky-aqua), var(--frosted-blue), var(--frosted-blue-2), var(--light-cyan) ); */
     /* background: linear-gradient( to bottom, var(--crimson-carrot), darkest at top var(--blaze-orange), var(--blaze-orange-2), var(--pumpkin-spice), var(--harvest-orange), var(--princeton-orange), var(--deep-saffron), var(--amber-glow), var(--orange), var(--amber-flame) lightest at bottom ); */
     /* background: linear-gradient( to bottom, var(--ink-black), darkest var(--night-bordeaux), var(--black-cherry), var(--oxblood), var(--brick-ember), var(--red-ochre), var(--cayenne-red), var(--deep-saffron), var(--orange), var(--amber-flame) lightest ); */
   }
 
   .intro h1{
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Montserrat", sans-serif;
     font-size: 60px;
     margin: 20px 0;
+    
   }
 
   .intro p{
@@ -100,7 +118,7 @@ button:hover {
 
   .intro button{
     padding: 9px 25px;
-    background-color: black;
+    background-color: rgb(234, 99, 32);
     color: white;
     border: none;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
@@ -108,11 +126,12 @@ button:hover {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     margin-top: 20px;
+    
   }
 
   .intro button:hover {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
