@@ -30,7 +30,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0px 6%;
-  border-bottom: solid 2px lightgrey;
+  /* border-bottom: solid 2px lightgrey; */
+   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+   position: relative;
 }
 
 .nav-links li{
@@ -40,7 +42,7 @@ header {
 }
 
 .nav-links li a{
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   /* font-family: '"Montserrat", sans-serif'; */
 }
@@ -51,7 +53,7 @@ header {
 
 .nav-links li a:hover{
   transition: all 0.3s ease 0s;
-  color: black;
+  color: rgb(234, 99, 32);
 }
 
 .nav-buttons button{
@@ -63,6 +65,7 @@ header {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif
 }
 
 #signup-btn {
@@ -106,7 +109,8 @@ header {
     font-family: "Montserrat", sans-serif;
     font-size: 60px;
     margin: 20px 0;
-    
+    filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.2));
+
   }
 
   .intro p{
@@ -126,6 +130,7 @@ header {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     margin-top: 20px;
+    font-family: "Montserrat", sans-serif
     
   }
 
@@ -160,3 +165,5 @@ header {
     
     text-align: center;
 }
+
+ 
