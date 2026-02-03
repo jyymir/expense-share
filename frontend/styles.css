@@ -212,7 +212,7 @@ header {
   border: 2px solid rgba(255, 255, 255,.2);
   border-radius: 40px;
   font-size: 16px;
-  color: #fff;
+  color: black;
   padding: 20px 45px 20px 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
@@ -224,7 +224,7 @@ header {
 }
 
 .input_box input::placeholder{
-  color: lightgray;
+  color: lightgrey;
 }
 
 .input_box i{
@@ -291,3 +291,6 @@ header {
 .register-link p a:hover{
   text-decoration: underline;
 }
+
+/* signup page */
+
